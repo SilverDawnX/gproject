@@ -356,7 +356,6 @@ const getNotice = async () => {
       const data = res.list.map((item: any) => ({
         title: item.title,
         type: item.type === 1 ? '通知' : '公告',
-        keys: [],
         date: item.createTime
       }))
       notice.splice(0, notice.length, ...data)

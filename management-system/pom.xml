@@ -4,21 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.iocoder.boot</groupId>
-    <artifactId>yudao</artifactId>
+    <artifactId>management-system</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
     <modules>
-        <module>yudao-dependencies</module>
-        <module>yudao-framework</module>
-        <!-- Server 主项目 -->
-        <module>yudao-server</module>
-        <!-- 各种 module 拓展 -->
-        <module>yudao-module-system</module>
-        <module>yudao-module-infra</module>
-        <module>yudao-module-bpm</module>
-
-
-
+        <module>dependencies</module>
+        <module>framework</module>
+        <module>server</module>
+        <module>system</module>
+        <module>infra</module>
+        <module>bpm</module>
     </modules>
 
     <name>${project.artifactId}</name>
@@ -45,7 +40,7 @@
         <dependencies>
             <dependency>
                 <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-dependencies</artifactId>
+                <artifactId>dependencies</artifactId>
                 <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
